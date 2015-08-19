@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Getting started"
+title:  "Getting started... Jekyll and GitHub Pages"
 date:   2015-08-19 18:53:44
 categories: jekyll update css
 ---
