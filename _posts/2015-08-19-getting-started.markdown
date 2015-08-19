@@ -24,8 +24,9 @@ While I was working on the aforementioned MVC site for monitoring SVN backups, I
 This evening, completely seperately, I subscribed to [Phil Haack's blog][haacked] and came across [a post regarding how he migrated his blog from Subtext to GitHub][haacked-jekyll]. I had a blog on blogspot a few years ago, but despised the environment and the blogspot.com URL. *I'm a developer, I should be making my own site... blah blah blah.* And then never did anything about it.
 This is my attempt to change that. A github.io address seems acceptable to me, as a developer, for a blog that will *hopefully* focus on programming. And [Jekyll][jekyll] is how I plan to do it. I can learn some web development, have total control over the site content, but not have the weight of an entire db driven blogging framework on my shoulders. The [Jekyll quick start guide][jekyll-qs] got a site up and running on my mac in seconds, and the [GitHub Help][github-help] got me the tools required to replicate how the site will appear on github, on my mac.
 Jekyll should allow me to display code correctly with syntax highlighting, which is often a staple requirement of programming blogs!
+
 ```c#
-    Console.WriteLine("Highlight my syntax!");
+Console.WriteLine("Highlight my syntax!");
 ```
 
 So far, so good. But this is my first post... let's see how this develops.
