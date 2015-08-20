@@ -26,7 +26,7 @@
 
 .site-title-description {
     @extend .site-title;
-    font-weight: 300;
+    font-weight: 100;
     float: right;
 
     @media(max-width: 650px) {
@@ -177,6 +177,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    font-weight: 300;
 }
 
 .page-heading {
@@ -215,6 +216,7 @@
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
+    font-weight: 300;
 
     @include media-query($on-laptop) {
         font-size: 36px;
