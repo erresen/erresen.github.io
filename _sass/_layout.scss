@@ -12,6 +12,7 @@
 
 .site-title {
     font-size: 26px;
+    font-weight: 700;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
@@ -23,7 +24,18 @@
     }
 }
 
+.site-title-description {
+    @extend .site-title;
+    font-weight: 300;
+    float: right;
+
+    @media(max-width: 650px) {
+        display: none;
+    }
+}
+
 .site-nav {
+    display: none;
     float: right;
     line-height: 56px;
 

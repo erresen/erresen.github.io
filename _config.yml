@@ -2,7 +2,7 @@
 title: erresen.github.io
 #email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  A programmer's blog about programming...
+  a programmer's blog about programming...
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://erresen.github.io" # the base hostname & protocol for your site
 #twitter_username: erresen
