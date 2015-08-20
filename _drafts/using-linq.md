@@ -23,7 +23,7 @@ foreach (int num in someNumbers)
 
 The statement and the loop above are effectively equivalent, in fact ReSharper is suggesting converting it into Linq as I type this in Visual Studio.
 
-!IMAGE foreach-linq!
+![Resharper suggestion]({{ site.url }}/assets/images/20150820loop2linq.jpg)
 
 # Choice of syntax
 
@@ -146,4 +146,4 @@ There's quite a few more Linq methods that you can use, but I think the ones abo
 # Deferred execution
 When any Linq queries are written
 
-!IMAGE DEFERRED!
+![Deferred Execution]({{ site.url }}/assets/images/20150820enumerate.jpg)
