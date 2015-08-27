@@ -10,10 +10,10 @@ layout: default
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
-          <a class="post-link post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link post-title" href="{{ post.url }}">{{ post.title }}</a>
         </h2>
         {{ post.excerpt }}
-        <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">Comments</a>
+        <a href="{{ post.url }}#disqus_thread" {% if post.disqus_identifier %} data-disqus-identifier="{{ post.disqus_identifier }}"{% endif %}>Comments</a>
       </li>
     {% endfor %}
   </ul>
