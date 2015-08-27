@@ -7,17 +7,13 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
           <a class="post-link post-title" href="{{ post.url }}">{{ post.title }}</a>
         </h2>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span><span class="post-meta post-comments"><a href="{{ post.url }}#disqus_thread">Comments</a></span>
         {{ post.excerpt }}
-        <a href="{{ post.url }}#disqus_thread" {% if post.disqus_identifier %} data-disqus-identifier="{{ post.disqus_identifier }}"{% endif %}>Comments</a>
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  
 </div>
