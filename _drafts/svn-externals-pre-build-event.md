@@ -4,6 +4,7 @@ title:  "SVN externals and pre-build events"
 date:   2015-09-21 09:23:45
 categories: csharp dotnet svn
 ---
+![VS Logo]({{ site.url }}/assets/images/vslogo.png)
 Just solved a source control problem for a co-worker that I thought was worth sharing.
 
 The source control setup at work is that we have an externals SVN repository that’s used for common DLL’s used in multiple projects, and then several project repo’s that don’t allow DLL’s into the repo, by way of a pre-commit hook. This stops people committing the same DLL’s over and over again in different projects, therefore reducing repository size. Our usual method used externals is to have a libs folder in the solution directory, and then checkout the external libraries to the libs folder, by way of SVN externals. These externals are then referenced by the solution’s projects.
