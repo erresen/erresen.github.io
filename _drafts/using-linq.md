@@ -23,7 +23,8 @@ List<int> bigNumbers = someNumbers.Where(num => num > 10).ToList();
 // { 56, 23 }
 {% endhighlight %}
 
-The Linq statement and the foreach loop above can be considered effectively equivalent\*, in fact ReSharper is suggesting converting it into Linq as I type this in Visual Studio. (\* - see Deferred Execution section below)
+[msdn-deferred-execution]: https://msdn.microsoft.com/en-us/library/bb943859.aspx
+The Linq statement and the foreach loop above can be considered effectively equivalent\*, in fact ReSharper is suggesting converting it into Linq as I type this in Visual Studio. (\* - see [Deferred Execution][msdn-deferred-execution])
 
 ![Resharper suggestion]({{ site.url }}/assets/images/20150820loop2linq.jpg)
 
@@ -175,8 +176,3 @@ string under30 = morePeople.Last(x => x.Age < 30).Name;
 {% endhighlight %}
 
 There's quite a few more Linq methods that you can use, but I think the ones above are probably the ones I've used most frequently. For the full list, with examples, [check out the MSDN docs][msdn-ienumerable]
-
-# Deferred execution
-When any Linq queries are written
-
-![Deferred Execution]({{ site.url }}/assets/images/20150820enumerate.jpg)
