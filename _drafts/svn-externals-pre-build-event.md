@@ -25,4 +25,6 @@ The solution we came to was to stick with our usual SVN externals procedure, and
 xcopy /Y "$(SolutionDir)libs\LibraryName\library.dll" "$(ProjectDir)"
 {% endhighlight %}
 
-We don’t tend to use too many pre or post build events, so this solution isn’t the most obviously to the chaps in my office, but conforms to the rules above; there are no DLL’s in the project repo, and the project can build directly from checkout… Win!
+We don’t tend to use too many pre or post build events, so this solution isn’t the most obvious to the chaps in my office, but conforms to the rules above; there are no DLL’s in the project repo, and the project can build directly from checkout… Win!
+
+I should probably make a script for cleaning up, but for now, this works.
