@@ -3,6 +3,7 @@ layout: post
 title:  "SVN externals and pre-build events"
 date:   2015-09-21 09:23:45
 categories: csharp dotnet svn
+comments: true
 ---
 ![VS Logo]({{ site.url }}/assets/images/vslogo.png)
 Just solved a source control problem for a co-worker that I thought was worth sharing.

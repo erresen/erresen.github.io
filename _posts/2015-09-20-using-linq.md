@@ -3,6 +3,7 @@ layout: post
 title:  "Using Linq in C#"
 date:   2015-09-20 18:53:44
 categories: jekyll csharp linq
+comments: true
 ---
 Linq syntax can be difficult to grasp when you see it for the first time, but once you wrap your head around it it's actually quite simple. To start with you need a collection of stuff; anything that implements IEnumerable\<T\>, in this case an integer array.
 
