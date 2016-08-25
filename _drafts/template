@@ -3,4 +3,5 @@ layout: post
 title:  "This is the post title"
 date:   2015-09-20 18:53:44
 categories: jekyll csharp syntax
+comments: true
 ---
