@@ -3,6 +3,7 @@ layout: post
 title:  "Getting started... Jekyll and GitHub Pages"
 date:   2015-08-19 18:53:44
 categories: jekyll update css
+comments: true
 ---
 # It's a blog!
 So, I made two websites today... an ASP.NET MVC 4 site at work that monitors a backup server, displaying a report of the SVN backup status of several repositories... and this one!
