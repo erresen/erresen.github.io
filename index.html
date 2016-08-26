@@ -10,7 +10,7 @@ layout: default
         <h2>
           <a class="post-link post-title" href="{{ post.url }}">{{ post.title }}</a>
         </h2>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span><span class="post-meta post-comments"><a href="{{ post.url }}#disqus_thread">Comments</a></span>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         {{ post.excerpt }}
       </li>
     {% endfor %}
