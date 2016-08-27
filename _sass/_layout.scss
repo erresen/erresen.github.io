@@ -26,8 +26,7 @@
 
 .site-title-description {
     @extend .site-title;
-    font-family: 'Inconsolata';
-    font-weight: 100;
+    font-weight: 300;
     float: right;
 
     @media(max-width: 650px) {
