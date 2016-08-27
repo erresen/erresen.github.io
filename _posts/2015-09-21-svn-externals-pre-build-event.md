@@ -22,9 +22,9 @@ My co-worker had a Visual Studio project that required an externally produced DL
 
 The solution we came to was to stick with our usual SVN externals procedure, and use a pre-build event to copy the files from the libs folder (described above) to the project directory.
 
-{% highlight csharp %}
+```csharp
 xcopy /Y "$(SolutionDir)libs\LibraryName\library.dll" "$(ProjectDir)"
-{% endhighlight %}
+```
 
 We don’t tend to use too many pre or post build events, so this solution isn’t the most obvious to the chaps in my office, but conforms to the rules above; there are no DLL’s in the project repo, and the project can build directly from checkout… Win!
 

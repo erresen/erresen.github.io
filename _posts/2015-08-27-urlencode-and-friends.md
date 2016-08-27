@@ -23,13 +23,13 @@ This address is assembled by the auto-updater by concatenating together known va
 All of these elements are valid for a HTTP path **except** the `ARTEFACT_PATH`. The `ARTEFACT_PATH` will always be valid file system path, but that doesn’t necessarily make it a valid HTTP path! The path from the TeamCity XML feed is simply a file path from the build's root. The path needs to be encoded. And it was. 
 It was being encoded using `System.Web.HttpUtility.UrlEncode()`. Turns out this is the wrong sort of encoding to use to HTTP-ify a file path correctly for this particular use case.
 
-{% highlight csharp %}
+```csharp
 // given the path
 string artefactPath = "Installer/My Installer.msi";
 
 System.Web.HttpUtility.UrlEncode(artefactPath);
 // UrlEncode() returns "Installer%2fMy+Installer.msi"
-{% endhighlight %}
+```
 
 When concatenated with the rest of the path, `UrlEncode()` gives a final path of: 
 
@@ -38,10 +38,10 @@ When concatenated with the rest of the path, `UrlEncode()` gives a final path of
 [xkcd404]: http://xkcd.com/404/
 This address returns [404 Not Found][xkcd404], i.e. this path doesn't resolve to the location of the file to download. A solution I found to work well was using `System.Web.HttpUtility.UrlPathEncode()`
 
-{% highlight csharp %}
+```csharp
 System.Web.HttpUtility.UrlPathEncode(artefactPath);
 // UrlPathEncode() returns "Installer/My%20Installer.msi"
-{% endhighlight %}
+```
 
 This gives us a final path of:
 

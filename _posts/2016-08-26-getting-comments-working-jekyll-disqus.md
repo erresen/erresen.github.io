@@ -17,18 +17,18 @@ While I don't receive many (read *any*) comments, I still think it's a worthwhil
 
 Back to the issue... Jekyll uses layout files to template a site. The blog posts on this site use the `post.html` template in the `_layouts` folder. Templates can have `.yml` front matter that, I assumed, would be applied to all posts... although I'm questioning that assumption now. This was the front matter from `post.html`:
 
-{% highlight yml %}
+```yml
 ---
 layout: default
 comments: true
 ---
-{% endhighlight %}
+```
 
-`comment: true` is the front matter required for enabling comments on a page, and I thought it'd propagate through to the individual posts. It certainly did on my local machine, so why not online? Once I moved `comments: true` from the layout front matter to the individual post front matter; voila... Comments.
+`comments: true` is the front matter required for enabling comments on a page, and I thought it'd propagate through to the individual posts. It certainly did on my local machine, so why not online? Once I moved `comments: true` from the layout front matter to the individual post front matter; voila... Comments.
 
 Individual post front matter:
 
-{% highlight yml %}
+```yml
 ---
 layout: post
 title:  "Getting Disqus comments to work on Jekyll"
@@ -36,7 +36,7 @@ date:   2016-08-26 13:18:31
 categories: jekyll disqus
 comments: true
 ---
-{% endhighlight %}
+```
 
 So, yeah... Jekyll's cool for building static blogs, but having things work in one environment and not others isn't fantastic. Not sure if it's Jekyll's fault, or GitHub pages set up, but it's frustrating either way.
 
