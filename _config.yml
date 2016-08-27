@@ -9,5 +9,10 @@ url: "http://erresen.github.io" # the base hostname & protocol for your site
 github_username:  erresen
 
 # Build settings
+
+markdown: kramdown
+highlighter: rouge
+
 kramdown:
   input: GFM
+  syntax_highlighter: rouge
