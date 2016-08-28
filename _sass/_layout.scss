@@ -229,6 +229,10 @@
     font-weight: 300;
     font-family: Monaco, Inconsolata, monospace;
 
+    span.white-out {
+        color: $background-color;
+    }
+
     @include media-query($on-laptop) {
         font-size: 36px;
     }
