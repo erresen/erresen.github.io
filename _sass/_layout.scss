@@ -223,6 +223,7 @@
     letter-spacing: -1px;
     line-height: 1;
     font-weight: 300;
+    font-family: Monaco, Inconsolata, monospace;
 
     @include media-query($on-laptop) {
         font-size: 36px;
