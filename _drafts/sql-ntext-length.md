@@ -1,10 +1,16 @@
 ---
 layout: post
 title: "Getting the length of an ntext field in T-SQL (MSSQL)"
-date: 2020-06-04 13:05:44
+date: 2020-06-04 00:00:00
 categories: sql
 comments: true
 ---
+
+When querying the length of a string field in SQL, the normal go-to is the `LEN()` function. If the field you're querying has the datatype `ntext` you'll likely run into the following error:
+
+```
+Argument data type ntext is invalid for argument 1 of len function.
+```
 
 ## Problem
 
@@ -27,7 +33,7 @@ Argument data type ntext is invalid for argument 1 of len function.
 
 ## Solution
 
-To get the length of an `ntext` field, use `DATALENGTH()` instead of `LEN()`. Note that DATALENGTH will return the number of bytes, not the number of characters in the string. Each character in an ntext field is 2 bytes, so you need to take this into account when writing your query.
+To get the length of an `ntext` field, use `DATALENGTH()` instead of `LEN()`. Note that `DATALENGTH` will return the number of bytes, not the number of characters in the string. Each character in an `ntext` field is 2 bytes, so you need to take this into account when writing your query.
 
 ```sql
 SELECT
