@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "SVN externals and pre-build events"
-date:   2015-09-21 09:23:45
+title: "SVN externals and pre-build events"
+date: 2015-09-21 09:23:45
 categories: csharp dotnet svn
 comments: true
 ---
-![VS Logo]({{ site.url }}/assets/images/vslogo.png)
+
 Just solved a source control problem for a co-worker that I thought was worth sharing.
 
 The source control setup at work is that we have an externals SVN repository that’s used for common DLL’s used in multiple projects, and then several project repo’s that don’t allow DLL’s into the repo, by way of a pre-commit hook. This stops people committing the same DLL’s over and over again in different projects, therefore reducing repository size. Our usual method used externals is to have a libs folder in the solution directory, and then checkout the external libraries to the libs folder, by way of SVN externals. These externals are then referenced by the solution’s projects.
@@ -13,8 +13,9 @@ The source control setup at work is that we have an externals SVN repository tha
 The aim of this is to allow any engineer to check out a project and build it without dicking around (finding referenced libraries etc.). These projects are then built on our TeamCity continuous integration server, checking that the build works from checkout, run tests, check coding standard conformance etc.
 
 So, we have two, slightly conflicting rules:
-1.	No DLL’s to be placed in the main projects repository.
-2.	Ensure project can build from checkout.
+
+1. No DLL’s to be placed in the main projects repository.
+2. Ensure project can build from checkout.
 
 These rules work fine 99 out of 100 times, using only the method described above, but we just experienced the 1 / 100.
 
