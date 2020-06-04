@@ -16,6 +16,10 @@ Argument data type ntext is invalid for argument 1 of len function.
 
 You can't use `LEN()` on an `ntext` field.
 
+In the query below, the `Comments` column has the datatype `ntext`.
+
+If you run this query...
+
 ```sql
 SELECT
     COUNT(0)
@@ -25,7 +29,7 @@ WHERE
     LEN(Comments) > 5
 ```
 
-Will give you the following error:
+You'll get the following error:
 
 ```
 Argument data type ntext is invalid for argument 1 of len function.
@@ -44,4 +48,4 @@ WHERE
     DATALENGTH(Comments) > 10
 ```
 
-Note that the predicate is now `DATALENGTH(Comments) > 10` as there's 2 bytes per character.
+Note that the predicate is now `DATALENGTH(Comments) > 10` as there's 2 bytes per character, so you have to double the length in the predicate.
