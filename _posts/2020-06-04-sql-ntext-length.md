@@ -4,6 +4,7 @@ title: "Getting the length of an ntext field in T-SQL (MSSQL)"
 date: 2020-06-04 00:00:00
 categories: sql
 comments: true
+excerpt_separator: <!--more-->
 ---
 
 When querying the length of a string field in SQL, the normal go-to is the `LEN()` function. If the field you're querying has the datatype `ntext` you'll likely run into the following error:
@@ -11,7 +12,7 @@ When querying the length of a string field in SQL, the normal go-to is the `LEN(
 ```
 Argument data type ntext is invalid for argument 1 of len function.
 ```
-
+<!--more-->
 ## Problem
 
 You can't use `LEN()` on an `ntext` field.
