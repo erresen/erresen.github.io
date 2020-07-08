@@ -11,7 +11,7 @@ GitHub doesn't appear to have a default `.gitignore` file for new [Vue.js](https
 
 <!--more-->
 
-```gitignore
+```bash
 .DS_Store
 node_modules
 /dist
