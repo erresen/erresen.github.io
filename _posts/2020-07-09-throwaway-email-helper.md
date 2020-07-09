@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Throwaway: Disposable email helper in Vue.js"
-date: 2020-07-09 19:40:00
+date: 2020-07-09 20:40:00
 categories: vue js security privacy programming
 comments: true
 ---
