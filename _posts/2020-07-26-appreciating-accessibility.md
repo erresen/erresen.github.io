@@ -18,7 +18,7 @@ The majority of my work as a developer is web based, so when considering accessi
 
 As most of my work is for the web, I don't develop very many piece of software that utilise keyboard shortcuts extensively. If any of my future work does incorporate keyboard shortcuts, I'm certainly going to be considering how people with physical restrictions will be able to use them. 
 
-I don't know what the "official" guidelines for keyboard shortcut accessibility are (or whether there are any guidelines!), but during the last few weeks of convalescence I've found thought about the guidelines that I'd appreciate. 
+I don't know what the "official" guidelines for keyboard shortcut accessibility are (or whether there are any guidelines!), but during the last few weeks of convalescence I've thought about the guidelines that I'd appreciate. 
 
 ## Accessibility guidelines for keyboard shortcuts
 
