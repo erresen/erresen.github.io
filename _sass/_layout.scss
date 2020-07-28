@@ -264,3 +264,21 @@
     }
   }
 }
+
+.post-nav {
+  display: block;
+  width: auto;
+  overflow: hidden;
+  margin-bottom: $spacing-unit;
+}
+
+.post-nav a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.post-nav .next {
+  text-align: right;
+}
