@@ -1,9 +1,3 @@
-// --- Config --- //
-var purecookieDesc =
-  "This website uses cookies to ensure you get the best experience. For more details, see the <a href='/privacy' target='_blank'>privacy policy</a>."; // Description
-var purecookieButton = "ACCEPT"; // Button text
-// ---        --- //
-
 function pureFadeIn(elem, display) {
   var el = document.getElementById(elem);
   el.style.opacity = 0;
@@ -55,12 +49,6 @@ function eraseCookie(name) {
 
 function cookieConsent() {
   if (!getCookie("purecookieDismiss")) {
-    document.body.innerHTML +=
-      '<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieDesc"><p>' +
-      purecookieDesc +
-      '</p></div><div class="cookieButton"><a onClick="purecookieDismiss();">' +
-      purecookieButton +
-      "</a></div></div>";
     pureFadeIn("cookieConsentContainer");
   }
 }
