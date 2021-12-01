@@ -10,3 +10,4 @@ To run the code locally and preview drafts, follow the installation instructions
 bundle exec jekyll serve --drafts
 ``` 
 
+Any code pushed to the master branch will be automatically published to the live blog.
