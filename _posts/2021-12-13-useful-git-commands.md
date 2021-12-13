@@ -25,7 +25,9 @@ git branch
 
 ### Checkout an existing branch
 
-Switch to an existing branch. [Switch command is newer, created for switching branches.][https://stackoverflow.com/questions/57265785/whats-the-difference-between-git-switch-and-git-checkout-branch]
+[switch-vs-checkout]: https://stackoverflow.com/questions/57265785/whats-the-difference-between-git-switch-and-git-checkout-branch
+
+Switch to an existing branch. [Switch command is newer, created for switching branches.][switch-vs-checkout]
 
 [git-switch]: https://git-scm.com/docs/git-switch
 [git switch documentation][git-switch]
@@ -45,7 +47,7 @@ git checkout branch_name
 
 ### Create a new branch
 
-Making a new local branch. [Switch command is newer, created for switching branches.][https://stackoverflow.com/questions/57265785/whats-the-difference-between-git-switch-and-git-checkout-branch]
+Making a new local branch. [Switch command is newer, created for switching branches.][switch-vs-checkout]
 
 [git switch documentation][git-switch]
 
