@@ -6,9 +6,9 @@ categories: git shortcuts visualstudio
 comments: true
 ---
 
-Git's super powerful, but a lot of that power is only really available in the command line, hidden from developers using GUI git tools build into IDEs like Visual Studio. I'm a C# dev, so I live in Visual Studio. Recently I've been finding myself having to use git's CLI to get things done either more quickly or at all!
+Git's super powerful, but a lot of that power is only really available in the command line, hidden from developers using GUI git tools built into IDEs like Visual Studio. I'm a C# dev, so I live in Visual Studio. Recently I've been finding myself having to use Git's CLI to get things done, either more quickly or sometimes at all!
 
-Below is a list of the git commands that I actually use in the CLI. It'll be a living list, updated when I find another command that I want to keep for the future. It's unlikely to contain things like committing code, as there's not reason not to use Visual Studio's implementation for that.
+Below is a list of the git commands that I actually use in the CLI. It's a living list, that gets updated when I find another command that I want to keep for the future. It's unlikely to contain things that are built into (and work well) in Visual Studio's Git implementation.
 
 ## Branch management
 
