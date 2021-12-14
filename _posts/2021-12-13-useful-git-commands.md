@@ -10,7 +10,7 @@ Git's super powerful, but a lot of that power is only really available in the co
 
 Below is a list of the git commands that I actually use in the CLI. It'll be a living list, updated when I find another command that I want to keep for the future. It's unlikely to contain things like committing code, as there's not reason not to use Visual Studio's implementation for that.
 
-### Branch management
+## Branch management
 
 ### List local branches
 
@@ -74,7 +74,7 @@ Get list of commits in develop that aren't in master:
 git log --no-merges develop ^master
 ```
 
-### Git flow
+## Git flow
 
 Love it or hate it, I use git flow. It's not perfect, but it's a known quantity that is easy to explain to new developers and is genuinely helpful in managing the work on distributed teams. The Visual Studio extension for git flow is... no the best. It works, but is slow and locks the interface quite a lot. It's also useful to sync (pull & push) on both master and develop before starting performing git flow operations, to make sure you're up to date. Doing this cause Visual Studio to want to reload any project that were modified when switching branches, which can be frustratingly slow in large solutions.
 
