@@ -125,3 +125,34 @@ git flow hotfix start hotfix_branch
 ```sh
 git flow hotfix finish hotfix_branch -n -p
 ```
+
+## Git remotes
+
+### Get remote origin URL
+
+There are a few ways to do this. You can check the setting from the configuration:
+
+```sh
+git config --get remote.origin.url
+```
+
+You could list all of your remote URLs:
+
+```sh
+git remote -v
+```
+
+Or you can get lots of info about the remote origin, including tracked and out-of-date branches:
+
+```sh
+git remote show origin
+```
+
+### Change remote origin URL
+
+Sometimes you might want to change where the remote origin, for example when you leave behind Azure Devops (previous TFS) and move to GitHub (because why wouldn't you). It's as simple as switching the origin and pushing to your new repo:
+
+```sh
+git remote set-url origin new-github-url-here
+git push
+```
