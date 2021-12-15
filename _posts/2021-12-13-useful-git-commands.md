@@ -86,7 +86,7 @@ git log --no-merges develop ^master
 
 ## Git flow
 
-Love it or hate it, I use git flow. It's not perfect, but it's a known quantity that is easy to explain to new developers and is genuinely helpful in managing the work on distributed teams. The Visual Studio extension for git flow is... no the best. It works, but is slow and locks the interface quite a lot. It's also useful to sync (pull & push) on both master and develop before starting performing git flow operations, to make sure you're up to date. Doing this cause Visual Studio to want to reload any project that were modified when switching branches, which can be frustratingly slow in large solutions.
+Love it or hate it, I use git flow. It's not perfect, but it's a known quantity that is easy to explain to new developers and is genuinely helpful in managing the work on distributed teams. The Visual Studio extension for git flow is... not the best. It works, but is slow and locks the interface quite a lot. It's also useful to sync (pull & push) on both master and develop before starting performing git flow operations, to make sure you're up to date. Doing this cause Visual Studio to want to reload any project that were modified when switching branches, which can be frustratingly slow in large solutions.
 
 To synchronise the master and develop branches outside of Visual Studio, I made a Powershell sync script which automates that for me:
 
