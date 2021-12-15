@@ -156,3 +156,25 @@ Sometimes you might want to change where the remote origin, for example when you
 git remote set-url origin new-github-url-here
 git push
 ```
+
+## Stashing
+
+Stashing is great if you're in the middle of some work and don't really want to commit it yet, but need to switch tasks and get on with something else (if you suddenly need to fix a bug that's just been reported, for example).
+
+### Stash changes
+
+```sh
+git stash push
+```
+
+### Get your stashed changes back
+
+```sh
+git stash pop
+```
+
+### List your stashes
+
+```sh
+git stash list
+```
