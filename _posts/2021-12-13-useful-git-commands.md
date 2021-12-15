@@ -6,9 +6,11 @@ categories: git shortcuts visualstudio
 comments: true
 ---
 
-Git's super powerful, but a lot of that power is only really available in the command line, hidden from developers using GUI git tools built into IDEs like Visual Studio. I'm a C# dev, so I live in Visual Studio. Recently I've been finding myself having to use Git's CLI to get things done, either more quickly or sometimes at all!
+Git's super powerful, but a lot of that power is only really available in the command line, hidden from developers using GUI tools built into IDEs like Visual Studio. I'm a C# dev, so I live in Visual Studio. Recently I've been finding myself having to use git's CLI to get things done, either more quickly or sometimes at all!
 
-Below is a list of the git commands that I actually use in the CLI. It's a living list, that gets updated when I find another command that I want to keep for the future. It's unlikely to contain things that are built into (and work well) in Visual Studio's Git implementation.
+Below is a list of the git commands that I actually use in the CLI. It's a living list that I'll update whenever I find another command that I want to keep for the future. It's unlikely to contain things that are built into (and work well) in Visual Studio's git implementation.
+
+Using the command line can be a bit scary for devs that are used to GUIs, but using it will give you a much better understanding of what's actually happening when you click the buttons on your GUI. The more you use the command line the more comfortable you'll get with it, and when the time comes that you actually _need_ to use git's CLI, you'll me better equipped to get the job done.
 
 [branching]: #branch-management
 [flow]: #git-flow
@@ -86,7 +88,9 @@ git log --no-merges develop ^master
 
 ## Git flow
 
-Love it or hate it, I use git flow. It's not perfect, but it's a known quantity that is easy to explain to new developers and is genuinely helpful in managing the work on distributed teams. The Visual Studio extension for git flow is... not the best. It works, but is slow and locks the interface quite a lot. It's also useful to sync (pull & push) on both master and develop before starting performing git flow operations, to make sure you're up to date. Doing this cause Visual Studio to want to reload any project that were modified when switching branches, which can be frustratingly slow in large solutions.
+Love it or hate it, in my team we use git flow. It's not perfect but it's a known quantity that is easy (ish) to explain to new developers and is genuinely helpful in managing the work in distributed teams. The Visual Studio extension for git flow is... not the best. It works, but is slow and locks the interface quite a lot.
+
+It's can be useful to sync (pull & push) on both master and develop to make sure you're up to date before performing git flow operations. Switching branches in Visual Studio can cause VS to reload any project that were modified when switching branches, which can be frustratingly slow in large solutions and when master and develop haven't been merged in a while.
 
 To synchronise the master and develop branches outside of Visual Studio, I made a Powershell sync script which automates that for me:
 
@@ -108,6 +112,8 @@ if ($branch -ne "master") {
     }
 }
 ```
+
+Most of the git flow operations I perform are starting and finishing hotfixes and features. The syntax is pretty simple, but there's a couple of useful flags on the finish hotfix command that aren't the defaults.
 
 ### Start a new git flow feature
 
