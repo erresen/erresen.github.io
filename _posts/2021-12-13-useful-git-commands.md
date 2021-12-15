@@ -10,6 +10,16 @@ Git's super powerful, but a lot of that power is only really available in the co
 
 Below is a list of the git commands that I actually use in the CLI. It's a living list, that gets updated when I find another command that I want to keep for the future. It's unlikely to contain things that are built into (and work well) in Visual Studio's Git implementation.
 
+[branching]: #branch-management
+[flow]: #git-flow
+[remotes]: #git-remotes
+[stashing]: #stashing
+
+- [Branch management][branching]
+- [Git flow][flow]
+- [Git remotes][remotes]
+- [Stashing][stashing]
+
 ## Branch management
 
 ### List local branches
