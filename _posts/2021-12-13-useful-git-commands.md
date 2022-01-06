@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Useful git commands that you actually use"
+title: "Command line git commands for IDE/GUI users"
 date: 2021-12-13 18:15:00
 categories: git shortcuts visualstudio
 comments: true
@@ -10,7 +10,7 @@ Git's super powerful, but a lot of that power is only really available in the co
 
 Below is a list of the git commands that I actually use in the CLI. It's a living list that I'll update whenever I find another command that I want to keep for the future. It's unlikely to contain things that are built into (and work well) in Visual Studio's git implementation.
 
-Using the command line can be a bit scary for devs that are used to GUIs, but using it will give you a much better understanding of what's actually happening when you click the buttons on your GUI. The more you use the command line the more comfortable you'll get with it, and when the time comes that you actually _need_ to use git's CLI, you'll me better equipped to get the job done.
+Using the command line can be a bit scary for devs that are used to GUIs, but using it will give you a much better understanding of what's actually happening when you click the buttons on your GUI. The more you use the command line the more comfortable you'll get with it, and when the time comes that you actually _need_ to use git's CLI, you'll be better equipped to get the job done.
 
 [branching]: #branch-management
 [flow]: #git-flow
