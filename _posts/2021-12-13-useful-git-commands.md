@@ -14,10 +14,12 @@ Using the command line can be a bit scary for devs that are used to GUIs, but us
 
 [branching]: #branch-management
 [flow]: #git-flow
+[history]: #commit-history
 [remotes]: #git-remotes
 [stashing]: #stashing
 
 - [Branch management][branching]
+- [Commit History][history]
 - [Git flow][flow]
 - [Git remotes][remotes]
 - [Stashing][stashing]
@@ -75,6 +77,8 @@ or
 git checkout -b branch_name
 ```
 
+## Commit History
+
 ### List commits in one branch but not another
 
 Get list of commits in develop that aren't in master:
@@ -84,6 +88,17 @@ Get list of commits in develop that aren't in master:
 
 ```sh
 git log --no-merges develop ^master
+```
+
+### List commits related to a file
+
+Get a list of commits that affected a specific file. Useful for finding when a file was deleted.
+
+[git-log]: https://git-scm.com/docs/git-log
+[git log documentation][git-log]
+
+```sh
+git log --full-history **/file.cs
 ```
 
 ## Git flow
