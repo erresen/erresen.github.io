@@ -113,6 +113,7 @@ If this is too "noisy", you can remove merges from that history with the `no-mer
 
 ```sh
 git log --full-history --no-merges -- **/file.cs
+```
 
 ## Git flow
 
