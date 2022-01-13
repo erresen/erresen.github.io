@@ -92,14 +92,27 @@ git log --no-merges develop ^master
 
 ### List commits related to a file
 
-Get a list of commits that affected a specific file. Useful for finding when a file was deleted.
+Get a list of commits that affected a specific file (in the examples below, a file named `file.cs`). Useful for finding when a file was deleted.
 
 [git-log]: https://git-scm.com/docs/git-log
 [git log documentation][git-log]
 
+Get the "simplified" history of a file.
+
 ```sh
-git log --full-history **/file.cs
+git log -- **/file.cs
 ```
+
+If this doesn't include what you're looking for, try a non-simplified history with the `full-history` option.
+
+```sh
+git log --full-history -- **/file.cs
+```
+
+If this is too "noisy", you can remove merges from that history with the `no-merges` option.
+
+```sh
+git log --full-history --no-merges -- **/file.cs
 
 ## Git flow
 
