@@ -165,10 +165,28 @@ git flow hotfix start hotfix_branch
 ### Finish a git flow hotfix
 
 `-n` Don't tag this hotfix
+
 `-p` Push to origin after finish
 
 ```sh
 git flow hotfix finish hotfix_branch -n -p
+```
+
+### Allow multiple hotfixes
+
+Git flow ships out of the box with the restriction that you can only have one hotfix branch open at a time. I think the idea is that hotfixes are really only for bugs, and you should finish the bug you're working on before starting on the next one. While I agree in principle, that's quite an opinionated default setting. In my team we also require code reviews before any code is merged into master or develop. This means that unless you're going to delete you local hotfix branch while waiting for it to be reviewed, you'll often want to have more than one hotfix branch open.
+
+My initial solution to this was just to manually create the hotfix branch using git rather than git flow:
+
+```sh
+git switch master
+git switch -c hotfix/new_hotfix_branch
+```
+
+But it turns out there's a built in way to disable the single hotfix restriction. The command below will enable multiple hotfixes for this repository on this computer.
+
+```sh
+git config --add gitflow.multi-hotfix true
 ```
 
 ## Git remotes
