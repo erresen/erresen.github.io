@@ -77,6 +77,28 @@ or
 git checkout -b branch_name
 ```
 
+### Rename a local branch
+
+To rename your branch you first need to check it out/switch to it, then change it's name using the `-m` flag on `git branch`.
+
+Switch to your branch.
+
+[git-switch]: https://git-scm.com/docs/git-switch
+[git switch documentation][git-switch]
+
+```sh
+git switch branch_name
+```
+
+Rename your branch.
+
+[git-branch]: https://git-scm.com/docs/git-branch
+[git branch documentation][git-branch]
+
+```sh
+git branch -m new_name
+```
+
 ## Commit History
 
 ### List commits in one branch but not another
