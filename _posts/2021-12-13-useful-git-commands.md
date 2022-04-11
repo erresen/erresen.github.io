@@ -99,6 +99,17 @@ Rename your branch.
 git branch -m new_name
 ```
 
+### Pushing new local branch to remote origin
+
+When you've created your new branch and committed some code to it, it's likely that you'll want to push this branch to GitHub (or elsewhere) for review or just to keep a copy somewhere other than your local machine. You can't just `git push` because the remote hasn't seen that branch before. UIs like those in Visual Studio actually hide this from you, but you have to do a little more leg work in the command line to push up your code (not a lot more though).
+
+[git-push]: https://git-scm.com/docs/git-push
+[git push documentation][git-push]
+
+```sh
+git push --set-upstream origin branch_name
+```
+
 ## Commit History
 
 ### List commits in one branch but not another
