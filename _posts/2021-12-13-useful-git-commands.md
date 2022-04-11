@@ -2,6 +2,7 @@
 layout: post
 title: "CLI git commands for IDE/GUI users"
 date: 2021-12-13 18:15:00
+updated: 2022-04-07 18:00:00
 categories: git shortcuts visualstudio
 comments: true
 ---
