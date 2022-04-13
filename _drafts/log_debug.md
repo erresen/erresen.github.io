@@ -1,5 +1,56 @@
-Log debug info to file in Visual Studio
+---
+layout: post
+title: "Save debug info to file in Visual Studio"
+date: 2022-04-13 21:55:00
+categories: dotnet csharp
+comments: true
+---
 
-https://docs.microsoft.com/en-gb/visualstudio/ide/reference/log-command-window-output-command
+When debugging time-sensitive applications, multithreaded applications or applications with components running in different processes, the act of placing a breakpoint can change (or break) the that the application runs. In these scenarios it can be useful to fall back to the old school way of doing things - log it out. 
 
-https://stackoverflow.com/questions/2586933/how-do-i-redirect-output-from-the-visual-studio-debugger
+Here's a guide on how to log Debug info to a file in Visual Studio.
+
+## Log to the Debug output
+
+Using the following command you can print whatever you like to the Output -> Debug window.
+
+```cs
+Debug.Print($"You can log stuff like this: {someVariable}");
+```
+
+Whenever that line is hit, the text will get printed to the Output -> Debug window.
+
+## Copy Debug output to Immediate window
+
+That's great, but the Debug window buffer only has some many lines, and the output disappears if your application stops. Luckily, there's a built in way to save this information to a file... it's just not very intuitive.
+
+The Debug output itself can't be saved, but the Immediate window can be. If only there was a way to copy the Debug output to the Immediate window...
+
+!Insert Screenshot here!
+
+A bit of a weird setting to have, but useful!
+
+## Saving the Immediate window to a file
+
+So we've got our application spitting out text to the Debug output and we're copying that output to the Immediate window. How do we save this to a file?
+
+In the Immediate Window, enter the following command:
+
+```
+> Tools.LogCommandWindowOutput /on C:\temp\captains.log
+```
+
+This will start the logging operation. Everything that's output (or input) into the Immediate Window will be saved to the log file.
+
+NOTE: The `>` is required! It signifies that this is a [Visual Studio Command](https://docs.microsoft.com/en-gb/visualstudio/ide/reference/visual-studio-commands), rather than a debug operation.
+
+The filename is optional. If you don't specify a filename, the log file will be created in the user's profile folder with the name cmdline.log. If a file with the same already exists, new log info will be appended to the end of the existing file.
+
+The `/on` flag starts the logging. The `/off` flag stops the logging:
+
+```
+> Tools.LogCommandWindowOutput /off
+```
+
+Et Voila. You now have your debug info in a log file, saved to your hard drive for you to analyse at your leisure. 
+[Log Command Window docs](https://docs.microsoft.com/en-gb/visualstudio/ide/reference/log-command-window-output-command)
