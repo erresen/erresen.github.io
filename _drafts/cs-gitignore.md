@@ -2,7 +2,7 @@
 layout: post
 title: "A .gitignore file for C# projects"
 date: 2022-04-20 08:28:00
-categories: dotnet git
+categories: dotnet csharp git
 comments: true
 excerpt_separator: <!--more-->
 ---
@@ -10,6 +10,8 @@ excerpt_separator: <!--more-->
 When setting up a new repo in GitHub for a C# dotnet project, there doesn't seem to be a preset .gitignore template for C# or dotnet. There actually is, but unhelpfully it's called "VisualStudio"... 🙄
 
 <!--more-->
+
+![VisualStudio .gitignore]({{ site.url }}/assets/images/vs-gitignore.jpeg)
 
 For reference, here's what it contains:
 
