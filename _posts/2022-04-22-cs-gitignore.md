@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Three .gitignore files for C# projects"
-date: 2022-04-20 08:28:00
+title: "Three .gitignore files for dotnet projects in git"
+date: 2022-04-22 09:55:00
 categories: dotnet csharp git
 comments: true
 excerpt_separator: <!--more-->
 ---
 
-When setting up a new repo in GitHub for a C# dotnet project, there doesn't seem to be a preset .gitignore template for C# or dotnet. There actually is, but unhelpfully it's not called what you'd expect; C#, CSharp, .net or dotnet... it's instead name "VisualStudio" 🙄
+When setting up a new git repository in GitHub for a C# dotnet project, there doesn't seem to be a preset .gitignore template for C# or dotnet. There actually is, but unhelpfully it's not called what you'd expect; C#, CSharp, .net or dotnet... it's instead name "VisualStudio" 🙄
 
 <!--more-->
 
@@ -21,11 +21,11 @@ There's actually a few ways of getting a good dotnet .gitignore into your repo, 
 - [dotnet new gitignore][dotnet-new-gitignore]
 - [GitHub's own gitignore Repository][github-gitignore-repo]
 
-They all seem to be different versions/generations of the same file, as they all reference the same URL at the top. I suspect the [GitHub VisualStudio Template][vs-github-preset] and [dotnet's new gitignore][dotnet-new-gitignore] are previous versions of [the gitignore from GitHub's gitignore repository][github-gitignore-repo], just tried to the current release of GitHub/dotnet.
+They all seem to be different versions/generations of the same file (I suspect the [GitHub VisualStudio Template][vs-github-preset] and [dotnet's new gitignore][dotnet-new-gitignore] are previous versions of [the gitignore from GitHub's gitignore repository][github-gitignore-repo], just tied to the current release of GitHub/dotnet).
 
 ## GitHub's Visual Studio Template
 
-The first (an probably easiest) way is to just use the VisualStudio template when creating your new repo... providing you can remember it's named VisualStudio and not CSharp or dotnet.
+The first (an probably easiest) way to get a .gitignore file for dotnet is to just use the VisualStudio template when creating your new repo in GitHub... providing you can remember it's named VisualStudio and not CSharp or dotnet.
 
 ![VisualStudio .gitignore]({{ site.url }}/assets/images/vs-gitignore.jpeg)
 
@@ -854,9 +854,9 @@ $RECYCLE.BIN/
 
 ## GitHub's own gitignore Repository
 
-You'll notice at the top of both of the previous .gitignore files, there's reference to this: [https://github.com/github/gitignore/blob/master/VisualStudio.gitignore](https://github.com/github/gitignore/blob/master/VisualStudio.gitignore)
+A third (and possibly ultimate) way of getting a .gitignore file for your shiny new repository is to go to the source. You'll notice at the top of both of the previous .gitignore files, there's reference to this: [https://github.com/github/gitignore/blob/master/VisualStudio.gitignore](https://github.com/github/gitignore/blob/master/VisualStudio.gitignore)
 
-This is different again, but since they both reference this file, I suspect this is the most up-to-date.
+This file is different again, but since both previous versions reference this file, I suspect this is the most up-to-date.
 
 ```awk
 ## Ignore Visual Studio temporary files, build results, and
