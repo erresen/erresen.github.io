@@ -6,7 +6,7 @@ categories: vue js security privacy programming
 comments: true
 ---
 
-I recently wrote **[Throwaway](https://erresen.github.io/throwaway)**, a little app built in Vue.js to help generate and store throwaway email addresses.
+I recently wrote **[Throwaway](https://erresen.github.io/throwaway/)**, a little app built in Vue.js to help generate and store throwaway email addresses.
 
 ## Why?
 
@@ -26,7 +26,7 @@ The slight issue with my preferred style of inbox, mailinator particularly, is t
 
 You also have to remember this email address long enough to go and check the inbox to verify the account. Not a big deal, but if you just spam the keyboard for the email address and submit the registration form, there’s a good chance you won’t spam the keyboard in the same way when it comes to checking the inbox.
 
-[Throwaway](https://erresen.github.io/throwaway) looks to solve those problems by producing randomly generated, kinda-pronounceable email addresses that can be copied to the clipboard with a single click, along with a handy link to the related inbox. This email address history can also be stored in your browsers local history, if you check a box.
+[Throwaway](https://erresen.github.io/throwaway/) looks to solve those problems by producing randomly generated, kinda-pronounceable email addresses that can be copied to the clipboard with a single click, along with a handy link to the related inbox. This email address history can also be stored in your browsers local history, if you check a box.
 
 So that’s the “why”... well most of it. I also like learning and had been hearing interesting things about the [Vue.js](https://vuejs.org/) framework. I’ve had a play with [React](https://reactjs.org/) before, and I use a very old version of [Angular](https://angularjs.org/) on a commercial Electron app that I work on, but Vue was supposed to be quick and simple to learn, allowing you to get stuff built fast! This simple project seemed like the ideal candidate. A few moving components, enough to make it tricky without a framework, but not so many that the project would take an eternity to build.
 
