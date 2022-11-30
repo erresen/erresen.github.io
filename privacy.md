@@ -8,6 +8,7 @@ permalink: /privacy/
 
 - The website owner doesn't steal or sell any of your data.
 - The website uses Google Analytics in a GDPR compliant way.
+- The website displays Google Adsense Ads.
 - Cookies are used where necessary.
 - Local storage is used where necessary.
 - The site is hosted by GitHub Pages.
@@ -42,6 +43,12 @@ In order to comply with your preferences, **erresen.github.io** may store a smal
 - IP addresses are processed anonymously
 - Sharing of data with Google is disabled
 - There is no use of other Google services in combination with the Google Analytics cookies.
+
+### Google Advertising
+
+- Third party vendors, including Google, use cookies to serve ads based on a your previous visits to this website or other websites.
+- Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to this site and/or other sites on the Internet.
+- Your may opt out of personalised advertising by visiting [Ads Settings](https://www.google.co.uk/settings/ads).
 
 ### Refusing cookies
 
