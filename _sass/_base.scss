@@ -181,6 +181,15 @@ pre {
   }
 }
 
+.page-content .wrapper{
+  display: grid;
+  grid-gap: $spacing-unit;
+  grid-template-columns: calc(#{$content-width} - (#{$spacing-unit} * 3) - 300px) 300px;
+  @include media-query($on-laptop) {
+    display: block;
+  }
+}
+
 /**
  * Clearfix
  */
