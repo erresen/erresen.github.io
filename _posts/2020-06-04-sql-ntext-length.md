@@ -2,9 +2,10 @@
 layout: post
 title: "Getting the length of an ntext field in T-SQL (MSSQL)"
 date: 2020-06-04 00:00:00
-categories: sql
+tags: sql
 comments: true
 excerpt_separator: <!--more-->
+permalink: "/windows/hardware/2016/09/01/safe-mode.html"
 ---
 
 When querying the length of a string field in SQL, the normal go-to is the `LEN()` function. If the field you're querying has the datatype `ntext` you'll likely run into the following error:

@@ -2,8 +2,9 @@
 layout: post
 title: "Appreciating accessibility - Keyboard shortcut guidelines"
 date: 2020-07-26 20:05:00
-categories: csharp dotnet accessibility shortcuts visualstudio 
+tags: csharp dotnet accessibility shortcuts visualstudio 
 comments: true
+permalink: "/csharp/dotnet/accessibility/shortcuts/visualstudio/2020/07/26/appreciating-accessibility.html"
 ---
 
 You know what really sucks? Breaking bones. I'd been watching too many mountain biking videos on YouTube and after the first jump on a ride at my local bike trails, I came to realise that my enthusiasm and confidence far outweighed my skill. After over-jumping the jump, hitting a tree, flying over the bars and landing directly on my left shoulder 4 metres down the trail, I now have a broken clavicle (collar bone). 

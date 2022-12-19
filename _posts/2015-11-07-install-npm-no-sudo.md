@@ -2,8 +2,9 @@
 layout: post
 title:  "Install node.js NPM packages globally without sudo"
 date:   2015-11-07 12:41:00
-categories: javascript bash node npm vscode
+tags: javascript bash node npm vscode
 comments: true
+permalink: "/javascript/bash/node/npm/vscode/2015/11/07/install-npm-no-sudo.html"
 ---
 [vscode]: https://code.visualstudio.com/
 [install-tsd]: https://code.visualstudio.com/Docs/runtimes/nodejs

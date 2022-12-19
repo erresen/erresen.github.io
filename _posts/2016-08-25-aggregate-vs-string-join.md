@@ -2,8 +2,9 @@
 layout: post
 title:  "Linq Aggregate vs String.Join"
 date:   2016-08-25 21:04:53
-categories: csharp linq strings
+tags: csharp linq strings
 comments: true
+permalink: "/csharp/linq/strings/2016/08/25/aggregate-vs-string-join.html"
 ---
 A task I seem to do fairly regularly is joining id’s into a single, comma separated string. These id’s tend to come from collection of objects, so I use linq’s Select method to convert them into a collection of id strings.
 

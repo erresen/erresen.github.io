@@ -2,8 +2,9 @@
 layout: post
 title: "Midpoint Rounding Options in C#"
 date: 2016-08-30 21:53:24
-categories: csharp syntax dotnet math
+tags: csharp syntax dotnet math
 comments: true
+permalink: "/csharp/syntax/dotnet/math/2016/08/30/decimal-midpoint-rounding.html"
 ---
 
 Decimal midpoint rounding options in C# default to **To Even**. This was a head scratching moment for me at first, as the way us humans have been taught to round is generally **Away From Zero**.

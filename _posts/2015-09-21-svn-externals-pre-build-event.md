@@ -2,8 +2,9 @@
 layout: post
 title: "SVN externals and pre-build events"
 date: 2015-09-21 09:23:45
-categories: csharp dotnet svn
+tags: csharp dotnet svn
 comments: true
+permalink: "/csharp/dotnet/svn/2015/09/21/svn-externals-pre-build-event.html"
 ---
 
 Just solved a source control problem for a co-worker that I thought was worth sharing.

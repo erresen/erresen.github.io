@@ -2,8 +2,9 @@
 layout: post
 title: "Nullable object must have a value - C#"
 date: 2022-04-08 7:45:00
-categories: dotnet csharp
+tags: dotnet csharp
 comments: true
+permalink: "/dotnet/csharp/2022/04/08/nullable-object.html"
 ---
 
 I recently came across an error I haven't seen before (or certainly can't remember):

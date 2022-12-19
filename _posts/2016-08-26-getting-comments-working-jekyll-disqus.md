@@ -2,8 +2,9 @@
 layout: post
 title:  "Getting Disqus comments to work on Jekyll"
 date:   2016-08-26 13:18:31
-categories: jekyll disqus
+tags: jekyll disqus
 comments: true
+permalink: "/jekyll/disqus/2016/08/26/getting-comments-working-jekyll-disqus.html"
 ---
 [disqus]: http://disqus.com/
 So, I've finally got [Disqus][disqus] comments working properly on this blog.

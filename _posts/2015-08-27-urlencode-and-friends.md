@@ -2,8 +2,9 @@
 layout: post
 title:  "C# UrlEncode and Friends"
 date:   2015-08-27 19:53:44
-categories: csharp
+tags: csharp
 comments: true
+permalink: "/csharp/2015/08/27/urlencode-and-friends.html"
 ---
 I recently ran into a problem whilst rewriting part of an auto update DLL used for keeping internal C# applications up-to-date. I was removing dependencies that weren’t compatible with dotNET4.5.
 The auto updater reads an XML feed from a TeamCity continuous integration server, comparing version numbers to see if there’s a newer *Release* version of an application available.

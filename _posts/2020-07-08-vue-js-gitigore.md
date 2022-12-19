@@ -2,9 +2,10 @@
 layout: post
 title: "A .gitignore file for Vue.js projects"
 date: 2020-07-08 00:00:00
-categories: vue js git
+tags: vue js git
 comments: true
 excerpt_separator: <!--more-->
+permalink: "/vue/js/git/2020/07/08/vue-js-gitigore.html"
 ---
 
 GitHub doesn't appear to have a default `.gitignore` file for new [Vue.js](https://vuejs.org/) projects, so here's what I'm currently using.
