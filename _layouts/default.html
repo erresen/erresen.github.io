@@ -11,6 +11,17 @@
     <div class="wrapper">
       {{ content }}
       <div class="sidebar">
+        <ul>
+          {% assign site_tags = site.tags | sort %}
+          {% for tag in site_tags %}
+          {% assign tag_name = tag | first %}
+          <li>
+            {{tag_name}}
+          </li>
+          {% endfor %}
+        </ul>
+
+
         <script async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5648299756902319"
           crossorigin="anonymous"></script>
