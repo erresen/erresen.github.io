@@ -2,7 +2,7 @@
 layout: post
 title:  "Cloning in C#"
 date:   2017-03-23 13:25:24
-categories: csharp syntax dotnet
+tags: csharp syntax dotnet
 comments: true
 ---
 # Cloning objects in C#

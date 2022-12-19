@@ -2,7 +2,7 @@
 layout: post
 title: "Database Normalization - 1NF, 2NF, 3NF, 4NF, 5NF, 6NF"
 date: 2022-11-30 00:00:00
-categories: sql databases
+tags: sql databases
 comments: true
 excerpt_separator: <!--more-->
 ---
